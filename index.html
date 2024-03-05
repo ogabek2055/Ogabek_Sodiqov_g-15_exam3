@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videodars Pizza App</title>
+</head>
+
+<body style="background-color: rgb(52, 140, 140);">
+    <form onsubmit="return submitRentCar(event)"
+        style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+        <input type="text" placeholder="Fullname" id="fullname" required>
+        <input type="number" placeholder="Number" id="phoneNumber" required>
+        <input type="text" placeholder="Address" id="address" required>
+        <h2>Car Prices</h2>
+        <select name="cars">
+            <option value="Bmw">
+                Bmw 430$
+            </option>
+            <option value="Mers">
+                Mers 560$
+            </option>
+            <option value="Tesla">
+                Tesla 660$
+            </option>
+        </select>
+        <h2>Choose Car</h2>
+        <div id="carsName">
+            <label for="Bmw">
+                <input type="radio" name="carsName" id="bmw" value="Bmw">
+                Bmw
+            </label>
+            <label for="Mers">
+                <input type="radio" name="carsName" id="mers" value="Mers">
+                Mers
+            </label>
+            <label for="Tesla">
+                <input type="radio" name="carsName" id="tesla" value="Tesla">
+                Tesla
+            </label>
+        </div>
+        <div id="fuelType">
+            <h2 style="text-align: center;">Type Of Fuel</h2>
+            <label for="benzin">
+                <input type="checkbox" name="fuelType" id="benzin" value="Benzin">
+                Benzin 20$
+            </label>
+            <label for="metan">
+                <input type="checkbox" name="fuelType" id="metan" value="Metan">
+                Metan 30$
+            </label>
+            <label for="dizel">
+                <input type="checkbox" name="fuelType" id="dizel" value="Dizel">
+                Dizel 60$
+            </label>
+            <label for="propan">
+                <input type="checkbox" name="fuelType" id="propan" value="Propan">
+                Propan 80$
+            </label>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Rent a Car</button>
+    </form>
+    <div style="display: flex; gap: 15px; flex-wrap: nowrap; align-items: center; justify-content: center;"
+        id="showOrder">
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
