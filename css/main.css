@@ -1,7 +1,66 @@
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+h2 {
+    color: black;
+}
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
     text-align: start;
+}
+
+form input {
+    padding: 10px 15px;
+
+    border-radius: 20px;
+}
+
+.selectCars,
+.fuelType,
+.carColors {
+    background-color: aliceblue;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.selectCars:hover {
+    background-color: rgb(190, 194, 198);
+    border-radius: 0px;
+    padding: 15px 25px;
+}
+
+.fuelType:hover {
+    background-color: rgb(190, 194, 198);
+    border-radius: 0px;
+    padding: 15px 25px;
+}
+
+.carColors:hover {
+    background-color: rgb(190, 194, 198);
+    border-radius: 0px;
+    padding: 15px 25px;
+}
+
+button {
+    background: rgb(9, 123, 62);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    color: rgb(9, 123, 62);
+    background-color: rgb(255, 255, 255);
 }

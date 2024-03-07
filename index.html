@@ -4,43 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Rent A car</title>
 </head>
 
-<body style="background-color: rgb(52, 140, 140);">
+<body style="background-color: rgb(79, 85, 85);">
+    <h1>Rent Cars</h1>
     <form onsubmit="return submitRentCar(event)"
         style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
         <input type="text" placeholder="Fullname" id="fullname" required>
         <input type="number" placeholder="Number" id="phoneNumber" required>
         <input type="text" placeholder="Address" id="address" required>
-        <h2>Car Prices</h2>
-        <select name="cars">
-            <option value="Bmw">
+        <div class="selectCars">
+            <h2>Choose Cars</h2>
+            <label for="bmw">
+                <input type="radio" name="cars" id="bmw" value="BMW">
                 Bmw 430$
-            </option>
-            <option value="Mers">
+            </label>
+            <label for="mers">
+                <input type="radio" name="cars" id="mers" value="Mercedes-Benz">
                 Mers 560$
-            </option>
-            <option value="Tesla">
+            </label>
+            <label for="tesla">
+                <input type="radio" name="cars" id="tesla" value="Tesla">
                 Tesla 660$
-            </option>
-        </select>
-        <h2>Choose Car</h2>
-        <div id="carsName">
-            <label for="Bmw">
-                <input type="radio" name="carsName" id="bmw" value="Bmw">
-                Bmw
-            </label>
-            <label for="Mers">
-                <input type="radio" name="carsName" id="mers" value="Mers">
-                Mers
-            </label>
-            <label for="Tesla">
-                <input type="radio" name="carsName" id="tesla" value="Tesla">
-                Tesla
             </label>
         </div>
-        <div id="fuelType">
+        <div class="fuelType" id="fuelType">
             <h2 style="text-align: center;">Type Of Fuel</h2>
             <label for="benzin">
                 <input type="checkbox" name="fuelType" id="benzin" value="Benzin">
@@ -57,6 +47,21 @@
             <label for="propan">
                 <input type="checkbox" name="fuelType" id="propan" value="Propan">
                 Propan 80$
+            </label>
+        </div>
+        <div class="carColors">
+            <h2>Choose Colors</h2>
+            <label for="black">
+                <input type="radio" name="colors" id="black" value="Black">
+                Black 10$
+            </label>
+            <label for="white">
+                <input type="radio" name="colors" id="white" value="White">
+                White 5$
+            </label>
+            <label for="yellow">
+                <input type="radio" name="colors" id="yellow" value="Yellow">
+                Yellow 3$
             </label>
         </div>
         <button type="reset">Reset</button>
